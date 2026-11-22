@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/apk/android"
-    package="com.example.cachecleaner">
+<manifest xmlns:android="http://android.com">
 
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
         android:label="Cache Purge Pro"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -17,7 +15,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Privileged isolated service running directly inside Shizuku user daemon space -->
         <service
             android:name=".CacheService"
             android:exported="false"
