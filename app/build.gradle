@@ -29,7 +29,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.11.0'
     
     // Core Shizuku Engine Frameworks
-    def shizuku_version = "13.6.0"
+    def shizuku_version = "13.1.5"
     implementation "dev.rikka.shizuku:api:$shizuku_version"
     implementation "dev.rikka.shizuku:provider:$shizuku_version"
 }
