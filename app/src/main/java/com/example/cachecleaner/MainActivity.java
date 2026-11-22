@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
                 List<String> packageNames = new ArrayList<>();
 
                 for (ApplicationInfo app : apps) {
-                    if ((app.flags & ApplicationInfo.FLAG_SYSTEM) == 0) {
+                    if ((app.flags & ApplicationInfo.FLAG_SYSTEM) == 0 || pm.getLaunchIntentForPackage(app.packageName) != null) {
                         String label = app.loadLabel(pm).toString();
                         rawList.add(new AppInfo(label, app.packageName, app.loadIcon(pm)));
                         packageNames.add(app.packageName);
